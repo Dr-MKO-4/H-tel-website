@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>THE MKO's SAV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="THE MKO's est un restaurant qui où on vous sert des poissons frais sous presque toute les formes de cuisson">
+    <meta name="keywords" content="Restaurant,douala,poissons,frais,fritures,braiser,MKO">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/img_icon_1.jpg">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="acceuil">acceuil</a></li>
+            <li><a href="restaurants.html" title="restaurants">restaurants</a></li>
+            <li><a href="contact.html" title="contact">contact</a></li>
+            <li><a href="panier.html" title="commande">commande</a></li>
+            <li><a href="argent.html" title="Porte feuille">porte feuille</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Nous contacter</h1>
+        <img src="img/img-ban-acceuil-1.jpg" alt="ras" height="365">
+    </header>
+    <section>
+        <h2>Où nous trouver</h2>
+        <p>AKWA Douala Cameroun</p>
+        <iframe src="https://maps.app.goo.gl/uZv3ij87WVxfPszr7" height="200" width="500"></iframe>
+
+    </section>
+    <section>
+        <h2>Nous envoyer un email</h2>
+        <form action="contact.html">
+            <div>
+                <label for="email">Votre email</label>
+                <input type="email" id="email" name="email" placeholder="MKO.AKWA@gmail.com" disabled>
+            </div>
+            <div>
+                <label for="name">Votre nom</label>
+                <input type="text" name="name" id="name" placeholder="MKO's AKAWA" autofocus required>
+            </div>
+            <div>
+                <label for="telephone">Téléphone</label>
+                <input type="text" name="telephone" required inputmode="tel" id="telephone" placeholder="622 222 222">
+            </div>
+            <div>
+                <label>Sexe</label>
+                <div>
+                    <label for="sexe">masculin</label>
+                    <input type="radio" name="sexe" required id="masculin" checked>
+                </div>
+                <div>
+                    <label for="sexe">feminin</label>
+                    <input type="radio" name="sexe" required id="feminin">
+                </div>
+            </div>
+            <div>
+                <label>Votre Message</label>
+                <div>
+                    <input type="time" hidden value=000000>
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Mon poisson n'était pas frais"></textarea>
+                </div>
+                <div>
+                    <label for="image">Charger une image</label>
+                    <input type="file" name="image" id="image">
+                </div>
+            </div>
+            <div>
+                <label for="numero_commande">Numero de la commande</label>
+                <input type="number" inputmode="numeric" name="numero_commande" id="numero_commande" placeholder="XXX-XXXX-XXXX" required>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+            </div>
+
+        </form>
+    </section>
+    <footer>
+        <p>
+            <a href="index.html" target="_parent"><br>Revenir à l'acceuil</a>
+            <a href="contact.html"><br>Nous contacter</a>
+        </p>
+    </footer>
+</body>
+
+</html>
