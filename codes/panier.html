@@ -27,22 +27,33 @@
 
 </head>
 <body class="body1">
-    <header class="top-bar">
-        <div class="social">
-            <a href="panier.html" title="Panier"><img src="img/deconnexion.png" alt="panier"></a>
-            <a href="#" title="Compte"><img src="img/compte.png" alt="compte"></a>
-            <a href="#" title="Deconnexion"><img src="img/deconnexion.png" alt="déconnexion"></a>
-        </div>
-        <nav >
-            <p href="#" class="MKO">MKO's</p>
-            <a title="acceuil" href="index.html"  >Accueil</a>
-            <a title="menu" href="menu.html" class="active" >Menu</a>
-            <a title="A propos" href="propos.html">A propos</a>
-            <a title="contact" href="contact.html">Contact</a>
-            <a title="blog" href="blog.html" >Blog</a>
+  <header class="p-3 text-bg-dark top-bar">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <p href="index.html" class="MKO">MKO's</p>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="restaurants.html" class="nav-link px-2 text-white">Restaurant</a></li>
+          <li><a href="Hotel.html" class="nav-link px-2 text-white">Hôtel</a></li>
+          <li><a href="About.html" class="nav-link px-2 text-white">A propos</a></li>
+          <li><a href="blog.html" class="nav-link px-2 text-white">Blog</a></li>
+          <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+          <li><a href="panier.html" class="nav-link px-2 text-white">Panier</a></li>
+        </ul>
 
-        </nav>
-    </header>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+          <a href="sign-up.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
@@ -173,64 +184,5 @@
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
     </body>
-
-</html><!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/img_icon_1.jpg">
-
-    <title>Panier</title>
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html" title="acceuil">acceuil</a></li>
-            <li><a href="restaurants.html" title="restaurants">restaurants</a></li>
-            <li><a href="contact.html" title="contact">contact</a></li>
-            <li><a href="panier.html" title="commande">commande</a></li>
-            <li><a href="argent.html" title="Porte feuille">porte feuille</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Mes commandes</h1>
-    </header>
-    <section>
-        <article>
-            <table>
-                <tr>
-                    <th>PLat</th>
-                    <th>Quantité</th>
-                    <th>Prix unitaire</th>
-                    <th colspan="2">Prix total</th>
-                    <th>Restaurant</th>
-                </tr>
-                <tr>
-                    <td>Salade</td>
-                    <td><img src="img/img_icon_1.jpg" height="30" alt="RAS"></td>
-                    <td>1</td>
-                    <td>1000 <em>frsCFA</em></td>
-                    <td>1000</td>
-                    <td>MKO's AKWA</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th colspan="2">TOTAL</th>
-                    <th colspan="2">1000</th>
-                    <td></td>
-                </tr>
-
-            </table>
-        </article>
-    </section>
-    <footer>
-        <a href="restaurants/restaurants_AKWA.html"><br>Revenir au restaurants</a>
-    </footer>
-
-</body>
 
 </html>

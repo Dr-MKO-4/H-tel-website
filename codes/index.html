@@ -11,6 +11,7 @@
   <link href="img/img_icon_1.jpg" rel="icon">
 
   <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -23,10 +24,22 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/img_icon_1.jpg">
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+  </svg>
 </head>
 
 <body class="body1">
-    <header class="top-bar">
+    <!-- <header class="top-bar">
         <div class="social"><a href="#" title="Compte"><img src="img/compte.png" alt="compte"></a><a href="#" title="Deconnexion"><img src="img/deconnexion.png" alt="déconnexion"></a></div>
         <nav >
           <p href="#" class="MKO">MKO's</p>
@@ -37,66 +50,270 @@
           <a href="blog.html">Blog</a>
         </nav>
         
-        <!--<iframe src="graphikart.fr" frameborder="0" width="400" height="200">error</iframe>-->
-        <!-- <a href="img/img-ban-acceuil-1.jpg"><img src="img/img-ban-acceuil-1.jpg" alt="image du restaurants d'acceuil du restaurant" height="365"></a> -->
+        
     </header>
     <div class="header">
         <h1>THE MKO's</h1>
-    </div>
+    </div> -->
+    <header class="p-3 text-bg-dark top-bar fixed-top">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center navbar-expand-md justify-content-lg-start">
+          <a href="index.html" class="MKO">MKO's</a>
+          <ul class="nav  col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="restaurants.html" class="nav-link px-2 text-white">Restaurant</a></li>
+            <li><a href="Hotel.html" class="nav-link px-2 text-white">Hôtel</a></li>
+            <li><a href="About.html" class="nav-link px-2 text-white">A propos</a></li>
+            <li><a href="blog.html" class="nav-link px-2 text-white">Blog</a></li>
+            <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+            <li><a href="panier.html" class="nav-link px-2 text-white">Panier</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+            <a href="sign-up.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="header header1"></div>
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>MKO HOTEL 😍</h1>
+                    <p class="opacity-75">On pose le décors de l'hotel et on affiche de façon aléatoire des image de l'hôltel.</p>
+                    <p><a class="btn btn-lg btn-warning" href="About.html"a>learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="header header2 "></div>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Nos chambres.</h1>
+                    <p>On affiche de façon aléatoire des image de nos chambre.</p>
+                    <p><a class="btn btn-lg btn-warning" href="#">Réservation rapide</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="header header3"></div>
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>Restaurant.</h1>
+                    <p>On affiche de façon aléatoire les images du restaurant et des plats.</p>
+                    <p><a class="btn btn-lg btn-warning" href="#">Commander</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+  
+    
     <article class="main-index">
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
-          <div class="section-title">
+          <div class="section-title section-titre">
             <h2>Our story</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam vero cumque commodi tenetur, laborum quae ad quo voluptates. Provident eos consequatur quam! Ex, explicabo natus aut deserunt sequi nihil quas..</p>
           </div>
           <section class="section-main">
-            <div class="section-text">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus quos nulla nostrum possimus id in, mollitia ab accusantium harum corporis labore porro ratione consequatur omnis sunt temporibus dolores voluptas?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores voluptatem quibusdam, doloremque aliquam nobis enim id. Numquam exercitationem commodi, reprehenderit similique delectus, accusantium tenetur id facilis dolores, iure eaque iste!
-                Pariatur corporis quos iusto minus a impedit molestiae, provident sint dignissimos. Eius, eligendi sequi possimus dolore maiores tempora nobis, esse alias laudantium debitis omnis ab deserunt hic harum assumenda. Est.
-                Iste pariatur officiis dignissimos fugiat aut quaerat molestias mollitia dolorem molestiae, incidunt accusamus dolorum, ab rem quam. Nemo modi, veritatis consequatur nostrum, dicta eos, odit expedita ut quod beatae illo!</p>
-                <a href="#" class="section-bouton">READ MORE</a>
-                <a href="#" class="section-bouton">MKO COORP</a>
+            <div class="row featurette">
+              <div class="col-md-7 order-md-1">
+                <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quis ducimus illum, enim consequatur minima alias sapiente debitis sed harum, sit vitae autem animi dolores ratione, saepe atque velit optio.</p>
+                <div class=" d-flex gap-3 justify-content-center lead fw-normal link-dark ">
+                <a class="lien icon-link" href="#">
+                  Read More
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+                <a class="lien icon-link" href="#">
+                  MKO COORP
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+                </div>
+              </div>
+              <div class="col-md-5 order-md-2">
+                <img src="img/about.jpg" alt="ras" class="section-img">
+              </div>
             </div>
-            <img src="https://placehold.co/200x200" alt="ras" class="section-img">
-          </section>
-          <hr>
+        
+            <hr class="featurette-divider">        
+            </section>
         </div>
       </section>
     </article>
     <article class="main-index">
+      
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
-              <div class="section-title">
-                <h2>Our MENUS</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam vero cumque commodi tenetur, laborum quae ad quo voluptates. Provident eos consequatur quam! Ex, explicabo natus aut deserunt sequi nihil quas..</p>
+              <div class="section-title section-titre">
+                <h2 class="display-3 fw-bold">NOS CHAMBRE</h2>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam vero cumque commodi tenetur, laborum quae ad quo voluptates. Provident eos consequatur quam! Ex, explicabo natus aut deserunt sequi nihil quas..</p>
+              </div>
+              <div class="d-flex gap-3 justify-content-center lead fw-normal link-dark ">
+                <a class="lien icon-link" href="#">
+                  Learn more
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+                <a class="lien icon-link" href="#">
+                  Buy
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+              <div class="speedreserve">
+                <form>
+                  <div class="form-row tet">
+                    <div class="form-group col-md-3 col-sm-12">
+                      <label class="texte" for="date.arrive">Date d'arriver</label>
+                      <input type="date" class="form-control entre" id="date.arrive" placeholder="Date d'arriver">
+                    </div>
+                    <div class="form-group col-md-3 col-sm-12 ">
+                      <label class="texte" for="date.départ">Date de Départ</label>
+                      <input type="date" class="form-control entre" id="date.depart" placeholder="Date de départ">
+                    </div>
+                    <div class="form-group input-group col-md-3 col-sm-12 " style="max-width: 270px;" >
+                      <label class="texte" for="categorie">Catégorie et quantité</label>
+                      <select class="form-select entre w-75" aria-label="Catégorie" id="categorie">
+                        <option selected>Classic</option>
+                        <option value="1">Présidentielle</option>
+                        <option value="2">Suite</option>
+                        <option value="3">Première class</option>
+                        <option value="4">presidentielle</option>
+                        <option value="5">famillialle </option>
+                        <option value="6">Premium </option>
+                        <option value="7">déchet </option>
+                      </select>
+                      <input type="number" class="form-control entre " id="nb.personne" placeholder="1">
+                    </div>            
+                    <button type="submit col-md-3 col-sm-12 " class="btn bouton ">Book now</button>
+                  </div>
+                </form>
               </div>
               <section class="section-main">
-                <div class="section-text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nostrum pariatur dignissimos praesentium animi nihil quo voluptatum atque cumque esse, totam optio officia? Animi ratione dolores magnam maiores. Quam, incidunt? <br> Lorem ipsum
-                      dolor sit, amet consectetur adipisicing elit. Dicta autem provident eligendi quas labore culpa. Iste perspiciatis accusantium quos vero ipsa officia iure illo, nesciunt velit maiores quaerat? Temporibus, aut.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolore ea tenetur distinctio dicta natus illo eius, expedita aperiam corporis ipsam beatae, dolorem similique repudiandae corrupti sed iusto temporibus est! Veritatis explicabo
-                      officia quaerat id hic, debitis cupiditate velit est, rem molestiae autem reiciendis odio ex porro? Officiis praesentium culpa suscipit tempore nisi ipsa labore, a, accusamus repellendus alias pariatur!</p>
-                  <a href="#" class="section-bouton">MORE</a>
+                <div class="section-text ">
+                  <div class="d-md-flex flex-md-equal  my-md-3">
+                    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                      <div class="my-3 py-3">
+                        <h2 class="text-produit-1 display-5">chambre A</h2>
+                        <p class="lead text-article">Sia description 1</p>
+                      </div>
+                      <div class="hearth">
+                        <i class="bi bi-heart-fill inline-text"></i>
+                      </div>
+                      <div class="img-produit-first shadow-sm mx-auto" style="width: 90%; height: 350px; border-radius: 21px 21px 0 0;"></div>
+                    </div>
+                    <div class="d-md-flex flex-md-equal  my-md-3 ">
+                      <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                          <h2 class="text-produit-2 display-5">Chambre B</h2>
+                          <p class="lead text-article">Sia dscription 2</p>
+                        </div>
+                        <div class="img-produit-second shadow-sm mx-auto" style="width: 90%; height: 350px; border-radius: 21px 21px 0 0;"></div>
+                      </div>
+                    <div class="d-md-flex flex-md-equal my-md-3 ">
+                      <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                          <h2 class="text-produit-3 display-5">Chambre C</h2>
+                          <p class="lead text-article">Sia dscription 3</p>
+                        </div>
+                        <div class="img-produit-third shadow-sm mx-auto" style="width: 90%; height: 350px; border-radius: 21px 21px 0 0;"></div>
+                      </div>
+                  </div>
                   
                 </div>
               </section>
       </div>
       <hr>
     </article>
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
+    <article>
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
+                <div class="section-title section-titre">
                   <h2>Evènements</h2>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam vero cumque commodi tenetur, laborum quae ad quo voluptates. Provident eos consequatur quam! Ex, explicabo natus aut deserunt sequi nihil quas..</p>
                 </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Corporis, doloribus! Cumque, vel dolorum? <br> Ex iste enim in, itaque delectus voluptas ipsum temporibus ut fugiat, incidunt exercitationem recusandae nesciunt vel quasi.</p>
-            <p><em>Bon appetit</em></p>
-        </section>
-        <hr>
-    </article>
+            <div class="container marketing">
+
+              <!-- Three columns of text below the carousel -->
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="img/evenement-1.png" alt="photos evenement-1" class="evt-img">
+                  <h2 class="fw-normal">Anniverssaire MKO</h2>
+                  <p>Mon anniversaire va être mo malll 😭😭😭😭.</p>
+                  <p><a class="btn btn-secondary" href="#">voir détails &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="img/evenement-2.png" class="evt-img" alt="photos evenement-2">
+                  <h2 class="fw-normal">Okok party</h2>
+                  <p>On avait beacoup manger l'okok ce jour là.</p>
+                  <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="img/evenement-3.png" class="evt-img" alt="photos evenement-3">
+                  <h2 class="fw-normal">Rentré scolaire</h2>
+                  <p>Bon bref on affiche les évènement le premier par date le second par popularité le troisième par importance.</p>
+                  <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
+            </section>
+            <hr>
+          </article>
+          <article>
+            <section id="contact" class="contact">
+              <div class="container" data-aos="fade-up">
+      
+                      <div class="section-title section-titre">
+                        <h2>Avis</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam vero cumque commodi tenetur, laborum quae ad quo voluptates. Provident eos consequatur quam! Ex, explicabo natus aut deserunt sequi nihil quas..</p>
+                      </div>
+                      <div class="container marketing">
+      
+                        <!-- Three columns of text below the carousel -->
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <img src="img/user-1.png" alt="photos evenement-1" class="avis-img">
+                            <h2 class="fw-normal">Nina</h2>
+                            <p>Bonjour good morning bueno je sais pass salut hey there i'm a boss <br> sexy dabord je m'en fou de vous oooooooooooooooooooooooo.</p>
+                            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                          </div><!-- /.col-lg-4 -->
+                          <div class="col-lg-4">
+                            <img src="img/user-2.jpg" alt="photos evenement-1" class="avis-img">
+                            <h2 class="fw-normal">Océane Wouleu</h2>
+                            <p>wesh neger pucy pucy streat 21, ho god, fuck, strea ho god fuck 21 SAVAGE. ✨✨✨✨</p>
+                            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                          </div><!-- /.col-lg-4 -->
+                          <div class="col-lg-4">
+                            <img src="img/user-3.jpg" alt="photos evenement-1" class="avis-img">
+                            <h2 class="fw-normal">MKO</h2>
+                            <p>Le site ci c'est une tuerie 👨🏾‍💻👀.</p>
+                            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                          </div><!-- /.col-lg-4 -->
+                        </div><!-- /.row -->
+                  </section>
+                  <hr>
+                </article>
+         
     <footer id="footer">
 
         <div class="footer-newsletter">
@@ -187,7 +404,9 @@
       <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
       <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
       <script src="assets/vendor/php-email-form/validate.js"></script>
-    
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
 </body>
